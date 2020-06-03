@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>weather forecast</title>
+  <link rel="stylesheet" href='/css/style.css'>
+</head>
+
+<body>
+  <div class="container">
+    <h1 id="weatherCondition">{{weatherCondition}}</h1>
+    <p id="cityName">{{cityName}}</p>
+
+    <h1 id="temperature">{{temperature}}C</h1>
+
+    <form action="/city" method="POST" id="citySearch">
+      <input type="text" name="city" placeholder=" Enter city Name..." />
+    </form>
+  </div>
+</body>
+
+</html>
